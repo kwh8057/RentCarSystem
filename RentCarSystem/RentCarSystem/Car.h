@@ -17,7 +17,7 @@ private:
 
 public:
 	Car() {}			// Car 
-	Car(int carId) { this.carId = carId; } // Car 
+	Car(int carId) { this->carId = carId; } // Car 
 	void checkInsurance();		// 보험 내역 확인
 	void checkRepair();			// 정비 내역 확인
 };
