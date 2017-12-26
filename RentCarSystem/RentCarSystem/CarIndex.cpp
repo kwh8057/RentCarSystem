@@ -1,9 +1,10 @@
-#include "Menu.h"
-#include "Gotoxy.h"
-#include "SetColor.h"
 #include <iostream>
 #include <stdio.h>
 #include <conio.h>
+#include "Menu.h"
+#include "Gotoxy.h"
+#include "SetColor.h"
+#include "CarInit.h"
 
 int CAR_DISPLAY::Menu(int flag)//화면에 보여지는 것들은 이 클래스에서 만들어질것입니다.
 {
@@ -43,22 +44,26 @@ int CAR_DISPLAY::Menu(int flag)//화면에 보여지는 것들은 이 클래스에서 만들어질것
 void CAR_DISPLAY::printMenu(int n, int &y, int flag)
 {
 	int i, x;
-	const char *MainMenu[] = { "=========== C A R  I N D E X ===========",
-		"|                                      |",
-		"|            1. 렌      트             |",
-		"|                                      |",
-		"|            2. 종      료             |",
-		"|                                      |",
-		"========================================" };
+	const char MainMenu[] = { "=========== C A R  I N D E X ===========\n" };
 
-	x = 33 - lstrlen(MainMenu[0]) / 2;
+	printf("%s", MainMenu);
+
+	list<Car> * carList = new list<Car>();
+	*carList = CarInit();
+
+	list<Car>::iterator iter = carList->begin();
+
+	for (iter; iter != carList->end(); ++iter) {
+		printf("차량ID : %d\n", iter->getCarId());
+	}
+
+	/*x = 33 - lstrlen(MainMenu) / 2;
 	y = 13 - sizeof(MainMenu) / sizeof(MainMenu[0]) / 2 - 1;
 	for (i = 0; i < sizeof(MainMenu) / sizeof(MainMenu[0]); i++)
 	{
 		gotoxy(x, y + i);
 		if (i == n * 2) setColor(GREEN);//선택된 번호의 메뉴를 컬러로 출력
-		printf("%s", MainMenu[i]);
 		if (i == n * 2) setColor(WHITE); //컬러를 원상태로 복구
 	}
-	gotoxy(x, y + n * 2);//커서를 선택된 번호 위치로
+	gotoxy(x, y + n * 2);//커서를 선택된 번호 위치로*/
 }

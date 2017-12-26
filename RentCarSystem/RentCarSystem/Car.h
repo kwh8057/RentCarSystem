@@ -16,10 +16,16 @@ private:
 	string color;		// 색상
 
 public:
-	Car() {}			// Car 
-	Car(int carId) { this->carId = carId; } // Car 
+	Car(int carId, int rentalCost, string carType, string manufacturer, string color);
+
 	void checkInsurance();		// 보험 내역 확인
 	void checkRepair();			// 정비 내역 확인
+
+	int getCarId() { return this->carId; }
+	int getRentalCost() { return this->rentalCost; }
+	string getCarType() { return this->carType; }
+	string getManufacturer() { return this->manufacturer; }
+	string getColor() { this->color; }
 };
 
 #endif

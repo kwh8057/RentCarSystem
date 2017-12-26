@@ -119,13 +119,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Car.cpp" />
     <ClCompile Include="CarIndex.cpp" />
+    <ClCompile Include="CarInit.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Settings.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Car.h" />
+    <ClInclude Include="CarInit.h" />
     <ClInclude Include="Gotoxy.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="SetColor.h" />

@@ -1,3 +1,4 @@
+#include <Windows.h>
 #include "Gotoxy.h"
 #include "SetColor.h"
 

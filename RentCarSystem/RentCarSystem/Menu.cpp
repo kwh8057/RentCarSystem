@@ -1,9 +1,10 @@
-#include "Menu.h"
-#include "Gotoxy.h"
-#include "SetColor.h"
 #include <iostream>
 #include <stdio.h>
 #include <conio.h>
+#include <Windows.h>
+#include "Menu.h"
+#include "Gotoxy.h"
+#include "SetColor.h"
 
 int CAR_DISPLAY::Menu()//화면에 보여지는 것들은 이 클래스에서 만들어질것입니다.
 {
