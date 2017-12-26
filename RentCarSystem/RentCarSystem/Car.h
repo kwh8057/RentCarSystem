@@ -9,15 +9,16 @@ using namespace std;
 
 class Car {
 private:
-	int carId;			// Â÷·® ID
-	int rentalCost;		// ·»Æ®ºñ
-	string carType;		// Â÷Á¾
-	string manufacturer;// Á¦Á¶È¸»ç
-	string color;		// »ö»ó
+	int carId;			// ì°¨ëŸ‰ ID
+	int rentalCost;		// ë ŒíŠ¸ë¹„
+	string carType;		// ì°¨ì¢…
+	string manufacturer;// ì œì¡°íšŒì‚¬
+	string color;		// ìƒ‰ìƒ
 
 public:
-	void checkInsurance();		// º¸Çè ³»¿ª È®ÀÎ
-	void checkRepair();			// Á¤ºñ ³»¿ª È®ÀÎ
+	Car() {}			// Car 
+	void checkInsurance();		// ë³´í—˜ ë‚´ì—­ í™•ì¸
+	void checkRepair();			// ì •ë¹„ ë‚´ì—­ í™•ì¸
 };
 
 #endif
