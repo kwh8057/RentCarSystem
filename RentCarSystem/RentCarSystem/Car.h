@@ -14,6 +14,7 @@ private:
 	string carType;		// 차종
 	string manufacturer;// 제조회사
 	string color;		// 색상
+	bool rentable;		// 대여 가능 여부
 
 public:
 	Car(int carId, int rentalCost, string carType, string manufacturer, string color);
@@ -25,7 +26,9 @@ public:
 	int getRentalCost() { return this->rentalCost; }
 	string getCarType() { return this->carType; }
 	string getManufacturer() { return this->manufacturer; }
-	string getColor() { this->color; }
+	string getColor() { return this->color; }
+	bool getRentable() { return this->rentable; }
+	void setRentable(bool rentable) { this->rentable = rentable; }
 };
 
 #endif

@@ -6,7 +6,7 @@ namespace CAR_DISPLAY {
 	int Menu();
 	int Menu(int flag);
 	void printMenu(int n, int & y);
-	void printMenu(int n, int & y, int flag);
+	void printMenu(int n, int & y, int &j);
 }
 
 
