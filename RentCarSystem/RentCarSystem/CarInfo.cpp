@@ -50,9 +50,9 @@ void PrintCarInfo(list<Car>::iterator it, list<Car> & carList) {
 		}
 		else {
 			system("cls");
-			gotoxy(18, 10);
+			gotoxy(19, 10);
 			cout << "올바른 키를 눌러주세요.";
-			gotoxy(18, 11);
+			gotoxy(13, 11);
 			system("pause");
 			return;
 		}
@@ -70,9 +70,9 @@ void PrintCarInfo(list<Car>::iterator it, list<Car> & carList) {
 		}
 		else {
 			system("cls");
-			gotoxy(18, 10);
+			gotoxy(19, 10);
 			cout << "올바른 키를 눌러주세요.";
-			gotoxy(18, 11);
+			gotoxy(13, 11);
 			system("pause");
 			return;
 		}
