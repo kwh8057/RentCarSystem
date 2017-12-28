@@ -35,7 +35,9 @@ list<Car>::iterator CAR_DISPLAY::Menu(int flag, list<Car> & carList)//화면에 보�
 			num = y;//한칸씩 띄어서 작성되었으니 번호는 2로 나누어야한다.
 			printMenu(num, yy, j, carList); //선택이 바뀌었으니 컬러변경을 위해서 다시 출력
 		}
-		else if (ch == ESC) exit(-1);
+		else if (ch == ESC) {
+			system("cls"); exit(-1);
+		}
 		else if (ch == ENTER) {
 			list<Car>::iterator iter = carList.begin();
 			for (int i = 1; i < num; i++) iter++;
