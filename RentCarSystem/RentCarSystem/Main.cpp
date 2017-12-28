@@ -1,24 +1,31 @@
 #include <iostream>
 #include "Menu.h"
+#include "CarInfo.h"
+#include "CarInit.h"
 
 using namespace std;
 
 void main() {
-	int num, carNum;
+	int num;
+	list<Car>::iterator iter;
+	list<Car> * carList = new list<Car>();
+	*carList = CarInit();
 
 	num = CAR_DISPLAY::Menu();
 
 	if (num == 1) {
-		system("cls");
+		while (1) {
+			system("cls");
 
-		carNum = CAR_DISPLAY::Menu(num) - 1;
+			iter = CAR_DISPLAY::Menu(num, *carList);
 
-		system("cls");
-
-		printf("%d", carNum);
+			system("cls");
+	
+			PrintCarInfo(iter, *carList);
+		}
 	}
 	else if (!num || num == 2) {
 		system("cls");
-		return;
+		exit(-1);
 	}
 }

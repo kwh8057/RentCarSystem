@@ -6,7 +6,6 @@ Car::Car(int carId, int rentalCost, string carType, string manufacturer, string 
 	this->carType = carType;
 	this->manufacturer = manufacturer;
 	this->color = color;
-	this->rentable = true;
 }
 
 void Car::checkInsurance() {

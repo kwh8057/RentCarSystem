@@ -14,7 +14,7 @@ private:
 	string carType;		// 차종
 	string manufacturer;// 제조회사
 	string color;		// 색상
-	bool rentable;		// 대여 가능 여부
+	bool rentable = true;		// 대여 가능 여부
 
 public:
 	Car(int carId, int rentalCost, string carType, string manufacturer, string color);

@@ -121,6 +121,7 @@
   <ItemGroup>
     <ClCompile Include="Car.cpp" />
     <ClCompile Include="CarIndex.cpp" />
+    <ClCompile Include="CarInfo.cpp" />
     <ClCompile Include="CarInit.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Menu.cpp" />
@@ -128,6 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Car.h" />
+    <ClInclude Include="CarInfo.h" />
     <ClInclude Include="CarInit.h" />
     <ClInclude Include="Gotoxy.h" />
     <ClInclude Include="Menu.h" />

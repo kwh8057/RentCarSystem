@@ -2,14 +2,15 @@
 #ifndef __MENU_H__
 #define __MENU_H__
 
+#include <list>
+#include "Car.h"
+
 namespace CAR_DISPLAY {
 	int Menu();
-	int Menu(int flag);
+	list<Car>::iterator Menu(int flag, list<Car> & carList);
 	void printMenu(int n, int & y);
-	void printMenu(int n, int & y, int &j);
+	void printMenu(int n, int & y, int &j, list<Car> & carList);
 }
-
-
 
 const int UP = 72;
 const int DOWN = 80;
