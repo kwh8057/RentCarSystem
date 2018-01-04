@@ -16,7 +16,7 @@ list<Car>::iterator CAR_DISPLAY::Menu(int flag, list<Car> & carList)
 	printMenu(num, y, j, carList);//num위치의 메뉴를 컬러로 보여주고, y값을 받아옵니다.
 
 	yy = y; //메뉴의 왼쪽 위 모서리의 y좌표값입니다. 
-
+	
 	while (1)
 	{
 		ch = _getch();//키보드로부터 한문자를 입력받는다.
