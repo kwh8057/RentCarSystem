@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void main() {
+int main() {
 	int num;
 	list<Car>::iterator iter;
 	list<Car> * carList = new list<Car>();
@@ -28,4 +28,6 @@ void main() {
 		system("cls");
 		exit(-1);
 	}
+
+	return 0;
 }
